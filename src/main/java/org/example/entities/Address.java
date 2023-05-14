@@ -47,4 +47,13 @@ public class Address {
     public void setBuildingType(BuildingType buildingType) {
         this.buildingType = buildingType;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", squareMeter=" + squareMeter +
+                ", buildingType=" + buildingType +
+                '}';
+    }
 }

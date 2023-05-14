@@ -3,6 +3,6 @@ package org.example.entities;
 public enum BuildingType {
     REZIDENTIAL,
     OFFICE,
-    DUPLAX,
+    DUPLEX,
     PRIVATE_HOUSE
 }

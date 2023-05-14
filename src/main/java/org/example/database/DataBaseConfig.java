@@ -17,10 +17,9 @@ public class DataBaseConfig {
     public static SessionFactory getSessionFactory(){
         if(sessionFactory == null){
             sessionFactory = new Configuration()
-                    .configure("hibernate.configuration.xml")
+                    .configure("hibernate.config.xml")
                     .addAnnotatedClass(Address.class)
-                    .addAnnotatedClass(AddressId.class)
-                    .addAnnotatedClass(Animal.class)
+                    //.addAnnotatedClass(Animal.class)
                     .addAnnotatedClass(Person.class)
                     .buildSessionFactory();
         }
